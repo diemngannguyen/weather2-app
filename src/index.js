@@ -40,6 +40,32 @@ console.log(days[day]);
 dateElement.innerHTML = `${days[day]} ${dateInMonth} ${months[month]}`;
 timeElement.innerHTML = `${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `   <div class="col-2">
+              <div class="weather-forecast-date"><h6>${day}</h6></div>
+              <img src="media/icons8-sun.gif"
+              alt="sunny"
+              id="icon"
+              class="float-left"
+              width="40px"
+              height="40px"/>
+              <div class="weather-forecast-temps">
+                <span class="weather-forecast-temps-max">33</span>
+                <span class="weather-forecast-temps-min">13</span>
+            </div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   console.log(response.data.name);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -112,5 +138,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheitLink);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+displayForecast();
 
 searchCity("Yeovil");
