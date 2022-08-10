@@ -123,3 +123,18 @@ li {
   text-align: center;
   margin-left: 165px;
 }
+
+/* weather forecast */
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  color: palevioletred;
+}
+.weather-forecast-temps-max {
+  color: palevioletred;
+}
+.weather-forecast-temps-min {
+  color: plum;
+}
