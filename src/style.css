@@ -1,0 +1,120 @@
+/* Main body i.e. border */
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #fefdfe;
+}
+/* The city Name */
+h1 {
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  margin: 30px 20px;
+  color: #6dd1cc;
+}
+/* temperature */
+h2 {
+  color: lightseagreen;
+}
+h3 {
+  color: palevioletred;
+}
+/* The Current Date */
+h4 {
+  color: lightseagreen;
+  text-align: right;
+}
+/* The Current Time */
+h5 {
+  color: lightseagreen;
+  text-align: right;
+  padding: 0 80px 0 0;
+}
+/* details & prediction for the current day i.e humidity & precip */
+.details {
+  color: lightseagreen;
+  padding-left: 30px;
+}
+.prediction {
+  color: palevioletred;
+}
+/* Links to change temp unit */
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+a:hover {
+  color: #f8e1ad;
+}
+/* Celsius & Fahrenheit units */
+.units {
+  position: relative;
+  top: -40px;
+  right: -70px;
+  color: lightseagreen;
+  font-size: 15px;
+}
+/* What the current temperature is described as */
+.description {
+  margin-top: -34px;
+}
+/* Weather Icon */
+.weather-img {
+  margin-left: 55px;
+}
+/* Current degree of weather i.e 10, 20, 5 etc */
+.temp-today {
+  position: relative;
+  margin-left: 40px;
+}
+li {
+  list-style: none;
+}
+/* Search bar display */
+.search-form {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.form-control {
+  width: 500px;
+  border: 1px solid #f7e1ea;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Spartan", sans-serif;
+}
+.btn-primary {
+  position: relative;
+  width: 30px;
+  margin-left: -145px;
+  margin-top: 2px;
+  background: #6dd1cc;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  padding-right: 80px;
+  transition-duration: all 200ms ease-in-out;
+}
+.btn-success {
+  position: relative;
+  background: #6dd1cc;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  margin-left: -92px;
+  margin-top: 2px;
+  border-radius: 100px;
+  border: 1px solid #f7e1ea;
+  transition-duration: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f8e1ad;
+  border-color: #fff;
+}
